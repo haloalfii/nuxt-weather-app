@@ -13,3 +13,22 @@
     <!-- </v-layout> -->
   </v-container>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      city: 'Sleman',
+    }
+  },
+  created() {
+    this.$axios
+      .$get(
+        'https://api.openweathermap.org/data/2.5/weather?q=' +
+          this.city +
+          '&appid=802117a63302fe5e07e0ab333218090d'
+      )
+      .then((res) => console.log(res))
+  },
+}
+</script>
