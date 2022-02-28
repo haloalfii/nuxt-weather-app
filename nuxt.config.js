@@ -6,7 +6,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - weather-app',
+    titleTemplate: '%s - @haloalfii',
     title: 'weather-app',
     meta: [
       { charset: 'utf-8' },

@@ -2,7 +2,7 @@
   <v-app>
     <div>
       <v-toolbar>
-        <v-toolbar-side-icon></v-toolbar-side-icon>
+        <!-- <v-toolbar-side-icon></v-toolbar-side-icon> -->
         <v-toolbar-title>Learning Nuxt</v-toolbar-title>
         <v-spacer></v-spacer>
         <v-toolbar-items class="hidden-sm-and-down">
@@ -22,10 +22,10 @@
 export default {
   head() {
     return {
-      title: "Weather App",
-    };
+      title: 'Weather App',
+    }
   },
-};
+}
 </script>
 
 <style scoped>
