@@ -82,7 +82,8 @@ export default {
         .$get(
           'https://api.openweathermap.org/data/2.5/weather?q=' +
             this.city +
-            '&appid=802117a63302fe5e07e0ab333218090d'
+            '&appid=' +
+            process.env.weatherAppid
         )
         .then((res) => (this.weather = res))
     },
