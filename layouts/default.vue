@@ -1,9 +1,11 @@
 <template>
   <v-app>
-    <div>
+    <v-content>
       <v-toolbar>
-        <v-toolbar-side-icon></v-toolbar-side-icon>
-        <v-toolbar-title>Learning Nuxt</v-toolbar-title>
+        <!-- <v-toolbar-side-icon></v-toolbar-side-icon> -->
+        <v-toolbar-title
+          ><nuxt-link to="/">Learning Nuxt</nuxt-link></v-toolbar-title
+        >
         <v-spacer></v-spacer>
         <v-toolbar-items class="hidden-sm-and-down">
           <v-btn flat>
@@ -11,10 +13,9 @@
           >
         </v-toolbar-items>
       </v-toolbar>
-      <v-content>
-        <nuxt />
-      </v-content>
-    </div>
+
+      <nuxt />
+    </v-content>
   </v-app>
 </template>
 
@@ -22,10 +23,10 @@
 export default {
   head() {
     return {
-      title: "Weather App",
-    };
+      title: 'Weather App',
+    }
   },
-};
+}
 </script>
 
 <style scoped>
